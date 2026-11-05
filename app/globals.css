@@ -1,0 +1,16 @@
+:root { --tinta: #17191c; --fundo: #fbfaf6;
+  --borda: #e3dccc; --acento: #c2410c; }
+body { margin: 0; font: 16px/1.5 system-ui,
+  sans-serif; color: var(--tinta);
+  background: var(--fundo); }
+header, main { max-width: 40rem;
+  margin: 0 auto; padding: 1rem; }
+header { border-bottom: 1px solid
+  var(--borda); }
+dl { display: grid; gap: .25rem 1rem;
+  grid-template-columns: max-content 1fr; }
+dt { font-weight: 600; }
+button { font: inherit;
+  padding: .4rem .8rem; }
+:focus-visible { outline: 2px solid
+  var(--acento); outline-offset: 2px; }
