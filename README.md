@@ -20,3 +20,4 @@ cookie de sessão é da mesma origem, como no proxy do Vite.
 |---|---|
 | `cap17-antes` | data de nascimento formatada num componente cliente com `toLocaleDateString()`: o HTML do servidor e o navegador discordam (erro de hidratação 418) e o dia sai errado |
 | `cap17` | data formatada no servidor, sem `Date`; `lib/api.ts` com `import "server-only"` |
+| `cap18` | `proxy.ts` (checagem otimista do cookie), layout aninhado em `/pacientes`, Route Handler `/saude`, página `/sobre` com `"use cache"` |
