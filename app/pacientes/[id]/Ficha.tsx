@@ -2,8 +2,8 @@ import { cookies } from "next/headers";
 import { notFound, redirect }
   from "next/navigation";
 import { obterPaciente } from "@/lib/api";
+import { dataBr } from "@/lib/datas";
 import { CopiarCns } from "./CopiarCns";
-import { Nascimento } from "./Nascimento";
 
 // Server Component assíncrono: busca na API
 // e devolve HTML. Nem o código dele nem a
@@ -29,9 +29,7 @@ export async function Ficha({ params }:
       <dl>
         <dt>CNS</dt><dd>{p.cns}</dd>
         <dt>Nascimento</dt>
-        <dd>
-          <Nascimento iso={p.nascimento} />
-        </dd>
+        <dd>{dataBr(p.nascimento)}</dd>
       </dl>
       <CopiarCns cns={p.cns} />
     </article>
